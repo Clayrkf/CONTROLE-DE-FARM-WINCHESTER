@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WINCHESTER - Controle de Metas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>WINCHESTER</h1>
+    <p>Controle Semanal de Rotas</p>
+</header>
+
+<div class="cards">
+    <div class="card">
+        <h3>Membros</h3>
+        <span id="totalMembros">0</span>
+    </div>
+
+    <div class="card">
+        <h3>Bateram Meta</h3>
+        <span id="bateramMeta">0</span>
+    </div>
+
+    <div class="card">
+        <h3>Não Bateram</h3>
+        <span id="naoBateram">0</span>
+    </div>
+
+    <div class="card">
+        <h3>Total Rotas</h3>
+        <span id="totalRotas">0</span>
+    </div>
+</div>
+
+<section class="registro">
+    <h2>Registrar Rotas</h2>
+
+    <input type="text" id="nome" placeholder="Nome do Membro">
+
+    <input type="number" id="rotas" placeholder="Quantidade de Rotas">
+
+    <button onclick="registrar()">Registrar</button>
+</section>
+
+<section>
+    <h2>Metas Semanais</h2>
+    <div id="lista"></div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
